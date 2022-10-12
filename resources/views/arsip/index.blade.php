@@ -4,8 +4,8 @@
         <div class="container-lg">
             <div class="ml-3">
                 <p><strong class="h3">Arsip Surat</strong><span class="small ms-1"></span></p>
-                <p class="text-medium-emphasis">Berikut ini adalah surat-surat yang telah terbit dan diarsipkan.<br>Klik
-                    "Lihat" pada kolom aksi untuk menampilkan surat.</p>
+                <p class="text-medium-emphasis">Berikut ini adalah surat-surat yang telah terbit dan diarsipkan.<br>
+                    Klik "Lihat" pada kolom aksi untuk menampilkan surat.</p>
             </div>
             <div class="card mb-auto mt-3">
                 <div class="card-body p-4">
@@ -15,7 +15,7 @@
                                 <span class="input-group-text">Cari Surat</span>
                                 <input type="search" placeholder="Search..." class="form-control" id="myInput">
                                 <button class="btn btn-outline-secondary" type="button"
-                                    onclick="myFunction()">Button</button>
+                                    onclick="myFunction()">Search</button>
                             </div>
                             <table id="myTable" class="table table-bordered table-sm">
                                 <thead>

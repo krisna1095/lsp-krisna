@@ -1,5 +1,4 @@
 @extends('layouts.index')
-@section('title', 'Buku')
 @section('content')
 
     <div class="body flex-grow-1 py-5 px-4">

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Arsip;
+use App\Models\ArsipModel;
 use Carbon\Carbon;
 use PDF;
 
@@ -16,7 +16,7 @@ class ArsipController extends Controller
      */
     public function index()
     {
-        $data = Arsip::get();
+        $data = ArsipModel::get();
 
     	//Mengirim variabel data dalam bentuk array kedalama view
     	return view('arsip.index', ['data'=> $data]);
@@ -53,7 +53,7 @@ class ArsipController extends Controller
         }
 
 
-        Arsip::create([
+        ArsipModel::create([
             'no_surat' => $request->get('no_surat'),
             'kategori' => $request->get('kategori'),
             'judul' => $request->get('judul'),
@@ -73,14 +73,14 @@ class ArsipController extends Controller
     public function show($id)
     {
         //Query ambil data dosen
-		$data= Arsip::where('id',$id)->get();
+		$data= ArsipModel::where('id',$id)->get();
 		return view('arsip.show', ['arsip' => $data[0]]);
     }
 
     public function destroy($id)
     {
         //memanggil model, query dengan kondisi where first
-        $data = Arsip::where('id', $id)->first();
+        $data = ArsipModel::where('id', $id)->first();
         $data->delete();
 
         //redirect setelah berhasil simpan data

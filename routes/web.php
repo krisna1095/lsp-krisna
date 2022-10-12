@@ -13,8 +13,8 @@ use App\Http\Controllers\ArsipController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::resource('arsip', ArsipController::class);
 Route::get('/', [ArsipController::class, 'index']);
+Route::resource('arsip', ArsipController::class);
 Route::get('/arsip/create', [ArsipController::class, 'create']);
 Route::get('/arsip/delete/{id}', [ArsipController::class, 'destroy']);
 Route::post('/arsip/store', [ArsipController::class, 'store']);

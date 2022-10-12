@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Arsip extends Model
+class ArsipModel extends Model
 {
     use HasFactory;
     //nama tabel ada yang dlm database
